@@ -1,0 +1,6 @@
+trả lời các câu hỏi
+ - mụcđich của thiết kế?
+ - phục vụ vấnđề gì
+ - sử dung nó khi nào?
+
+--> học và sử dung trong dự án

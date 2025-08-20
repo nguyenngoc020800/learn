@@ -1,0 +1,3 @@
+-tập hợp các mẫu thiết kế từ các lập trình viên đi trước sử dung hiệu quả ở các hệ thống lớn đã được chứng minh là hiện quả và có thể tái sử dung nhiều code và mở rộng hệ thống code
+
+- hiểu sâu về tư duy lập trình hướngđối tượng

@@ -1,0 +1,7 @@
+1. database và tối ưu hóa index
+2. transaction và distribute transaction
+3. Message queue và xử lí bất đồng bộ
+4. biết đc server chịu được bn request
+5. catch và distribute catch
+6. consistency giữa catch và db
+7. Log, CI/CD
