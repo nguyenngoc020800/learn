@@ -1,0 +1,4 @@
+- thiết kế chia nhỏ các logic cùng loại ra thành nhiều phần, gồm 1 strategy là contract của các concrete strategy, sau đó sử dụng 1 engine để tổng hợp các concrete lại và tùy theo trạng thái đóng mở của từng logic concrete để run logic trong đó
+- chia nhỏ -> test từng logic dễ dàng
+- khi thêm 1 logic, 1 điều kiện -> thêm 1 concrete stategy, đăng kí vào enginer, nhanh gọn
+- tránh if-else quá nhiều, khi sửa và test cần phải thêm nhiều dữ kiện để đến đc logic đó
