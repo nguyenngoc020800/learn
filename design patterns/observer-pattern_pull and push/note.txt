@@ -1,0 +1,7 @@
+- bao gồm 1 chủ thể chung là Subject và các chủ thể quan sát chủ thể chung là Observer.
+- gồm 2 logic type:
+	- pull: chủ thể chung Subject thay đổi và update trạng thái của chính nó sau đó có thể truyền tín hiệu đến các chủ thể quan sát cho biết là chủ thể chung đã thay đổi hoặc có thể là không để khi nào chủ thể quan sát muốn lấy dữ liệu sẽ pull dữ liệu từ chủ thế chung
+	-> nhanh hơn lúc update vì chỉ update chính chủ thể chung, nhưng khi các chủ thể quan sát láy data sẽ bị chậm vì phải pull data từ chủ thể chung
+	
+	- push: khi chủ thể chung Subject update trạng thái thì sẽ gửi data đến chủ thể quan sát để chủ thể quan sát update data của chủ thể chung tại chủ thể quan sát và khi chủ thể quan sát lấy data thì chỉ cần lấy data đã được nhận, ko cần request từ chủ thể quan sát
+	-> chậm ở lúc update, vì chủ thể chung phải gửi data update trạng thái ở tất cả các chủ thế quan sát nó, nhanh hơn khi chủ thể quan sát lấy data vì có sẵn data từ trước, ko cần phải pull từ nơi khác
