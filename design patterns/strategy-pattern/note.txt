@@ -1,4 +1,11 @@
-- thiết kế chia nhỏ các logic cùng loại ra thành nhiều phần, gồm 1 strategy là contract của các concrete strategy, sau đó sử dụng 1 engine để tổng hợp các concrete lại và tùy theo trạng thái đóng mở của từng logic concrete để run logic trong đó
+Mục tiêu: Cho phép thay đổi thuật toán/hành vi mà client dùng, mà client không cần biết chi tiết.
+
+Cách hoạt động: Client chỉ gọi 1 interface chung (doSomething()), còn việc chạy theo thuật toán nào phụ thuộc vào Strategy được truyền vào.
+
+Ví dụ: PaymentService có thể dùng PayPal, CreditCard, Crypto.
+
+👉 Keyword dễ nhớ: “Hoán đổi thuật toán”.
+- thiết kế chia nhỏ các logic cùng loại ra thành nhiều class chung 1 contract, gồm 1 strategy là contract của các concrete strategy, sau đó sử dụng 1 engine để tổng hợp các concrete lại và tùy theo trạng thái đóng mở và điều kiện để quyết định chạy concrete strategy nào? có chạy chung với nhau hay chỉ chạy 1 cái.
 - chia nhỏ -> test từng logic dễ dàng
 - khi thêm 1 logic, 1 điều kiện -> thêm 1 concrete stategy, đăng kí vào enginer, nhanh gọn
 - tránh if-else quá nhiều, khi sửa và test cần phải thêm nhiều dữ kiện để đến đc logic đó
