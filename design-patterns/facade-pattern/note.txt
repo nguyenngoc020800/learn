@@ -1,0 +1,8 @@
+- tạo ra phương thức thân thiện với người sử dụng
+- người dùng chỉ cần gọi 1 method, tất cả các quy trình, logic sẽ thực hiện đằng sau method đó
+- gói gọn, người dùng ko cần phải biết hết tất cả các logic, chỉ cần gọi method để thực hiện
+- phân biệt với các method khác
+	strategy: thay đổi thuật toán dựa trên input người dùng truyền vào
+	laravel facade: lấy ra thư viện cần dùng và gọi static func nhanh chóng mà ko cần new
+	facade: bao bọc và gom lo logic vào 1 method để đơn giản hóa cho người dùng, người dùng chỉ được gọi và thay đổi gì được
+ 
